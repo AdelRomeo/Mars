@@ -5,7 +5,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const watch = require('gulp-watch');
 
 gulp.task('sass-compile', () =>{
-    return gulp.src('./src/styles/**/*.scss') // путь откуда будут браться файлы
+    return gulp.src('./src/styles/main-style.scss') // путь откуда будут браться файлы
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(concat('main.css')) //сборка нескольких файлов в один
