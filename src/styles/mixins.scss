@@ -1,0 +1,16 @@
+@mixin second-title{ //вторые по размеру заголовки
+  color: #e12457;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+@mixin small-title{ //самые маленькие заголовки
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@mixin main-descr{ //азбацы
+  font-size: 16px;
+  line-height: 24px;
+  color: #4c4c4c;
+}

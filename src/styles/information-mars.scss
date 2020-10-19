@@ -1,0 +1,140 @@
+.information-mars{
+  width: 100%;
+  background: #ffffff;
+}
+
+.consider-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10%;
+  background: #fff5f8;
+}
+
+.consider-item{
+  width: 130px;
+  &>span{
+    font-size: 48px;
+    font-weight: bold;
+    color: #e12457;
+  }
+  &>p{
+    font-size: 13px;
+    line-height: 18px;
+    color: #4c4c4c;
+  }
+}
+
+.consider-item_line{
+  width: 1px;
+  height: 50px;
+  background: #fbd6e0;
+}
+
+.mars-memory{
+  padding: 0 10%;
+  margin-top: 120px;
+}
+
+.mars-memory_container-info{
+  display: flex;
+}
+
+.second-title{
+  @include second-title;
+}
+
+.mars-memory_descr{
+  &:first-of-type{
+    width: 650px;
+    margin-right: 100px;
+  }
+  &:last-of-type{
+    width: 550px;
+  }
+}
+
+.about-musk{
+  padding: 0 10%;
+  margin-top: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-musk_main-info{
+  max-width: 760px;
+}
+
+.about-musk_quote{
+  color: #e12457;
+}
+
+.photo-container{
+  position: relative;
+  width: 325px;
+  height: 373px;
+  margin-top: 100px;
+  border: 10px solid #e12457;
+  &>img{
+    position: absolute;
+    top: 35px;
+    left: -60px;
+  }
+}
+
+.price{
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 100px;
+  color: $white-color;
+  width: 1140px;
+  height: 308px;
+  background: url("../../images/priceBack.png") no-repeat center;
+}
+
+.price-rocket{
+  position: absolute;
+  width: 310px;
+  height: 310px;
+  top: -30px;
+  left: 30px;
+}
+
+.price_main-info{
+  margin-left: 400px;
+  margin-top: 50px;
+}
+
+.price_descr{
+  color: $white-color;
+}
+
+.price-many{
+  display: flex;
+  align-items: center;
+  &>span{
+    margin-right: 30px;
+  }
+  &>span:first-of-type{
+    font-size: 60px;
+  }
+  &>span:last-of-type{
+    font-size: 24px;
+    text-decoration: underline;
+  }
+}
+
+.price_ready-fly{
+  background: #ffffff;
+  color: #c2529a;
+  margin-left: 50px;
+  padding: 20px 40px;
+  font-size: 18px;
+  border-radius: 30px;
+  box-shadow: 3px 0px 30px -4px #ffffff;
+  transition: box-shadow ease 350ms;
+  &:hover{
+    box-shadow: 3px 0px 38px 1px #ffffff;
+  }
+}

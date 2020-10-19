@@ -17,4 +17,13 @@ ul,li{
 button{
   border: none;
   background: none;
+  cursor: pointer;
+}
+
+.main-descr{
+  @include main-descr;
+}
+
+.small-title{
+  @include small-title;
 }
