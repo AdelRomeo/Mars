@@ -1,0 +1,89 @@
+.mars-difficulties{
+  width: 100%;
+  padding: 150px 10%;
+  margin-top: 200px;
+  background: url("../../images/stoneBack.png") no-repeat #172145;
+  background-size: cover;
+  color: $white-color;
+}
+
+.mars-difficulties_title{
+  color: inherit;
+  text-align: center;
+}
+
+.mars-difficulties_video{
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  &>iframe{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    border-width: 0;
+    outline-width: 0;
+  }
+}
+
+.survival-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.survival-title{
+  width: 230px;
+  &>button{
+    position: relative;
+    transition: all ease 250ms;
+    width: 100%;
+    text-align: left;
+    color: $white-color;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    font-size: 16px;
+    opacity: 0.5;
+    &:first-of-type{
+      opacity: 1;
+    }
+    &:focus{
+      outline: none;
+    }
+    &:after{
+      position: absolute;
+      right: 30px;
+      top: 12px;
+      content: url("../../images/arrowBold.png");
+    }
+  }
+}
+
+.survival-info{
+  position: relative;
+  width: 70%;
+}
+
+.survival-item{
+  position: absolute;
+  transition: opacity ease 600ms;
+  opacity: 0;
+  &:first-of-type{
+    opacity: 1;
+  }
+  &>h4{
+    @include small-title;
+    margin-top: 5px;
+
+  }
+  &>p{
+    @include main-descr;
+    color: $white-color;
+  }
+}
+
