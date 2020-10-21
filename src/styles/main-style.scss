@@ -1,4 +1,4 @@
-@import "variables"; //переменные
+@import "variables.scss"; //переменные
 @import "mixins.scss"; //миксины
 @import "global.scss"; //глобальные стили
 
@@ -6,6 +6,7 @@
 //--Основа--//
 @import "header.scss";
 @import "information-mars.scss";
+@import "mars-difficulties.scss";
 
 
 
