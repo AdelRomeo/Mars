@@ -18,6 +18,9 @@ button{
   border: none;
   background: none;
   cursor: pointer;
+  &:focus{
+    outline: none;
+  }
 }
 
 .main-descr{

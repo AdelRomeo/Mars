@@ -1,0 +1,92 @@
+.inside-life{
+  width: 100%;
+  padding: 0 10%;
+  display: grid;
+  grid-template-areas:
+          "title title"
+          "marker preview";
+  grid-template-rows: max-content 1fr; //высота строк
+  grid-template-columns: 20% auto; //ширина столбцов
+}
+
+.inside-life_title{
+  grid-area: title;
+  //background: red;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.marker_container{
+  position: relative;
+  grid-area: marker;
+  margin-left: 30px;
+  &:after{
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 5px;
+    height: 100%;
+    content: '';
+    background: #e12457;
+  }
+}
+
+.marker_item>button{
+  position: relative;
+  width: 40px;
+  margin-bottom: 20px;
+  &:after{
+    position: absolute;
+    left: -22px;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #e12457;
+    background: #ffffff;
+    content: '';
+    z-index: 2;
+  }
+}
+
+.marker_item>button>span{
+  display: block;
+  font-family: $main-font;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  color: #e12457;
+  font-size: 19px;
+  font-weight: bold;
+  transform: rotate(90deg);
+}
+
+.inside-life_preview-container{
+  grid-area: preview;
+  //background: yellow;
+}
+
+.inside-life_container-img{
+  width: 100%;
+}
+
+.inside-life_container-img>img{
+  max-width: 100%;
+  height: auto;
+}
+
+.inside-life_preview-item{
+  &>h4{
+    @include small-title;
+  }
+  &>p{
+    @include main-descr;
+  }
+  &>button{
+    background: #e12457;
+    font-size: 16px;
+    color: $white-color;
+    padding: 15px 40px;
+    border-radius: 30px;
+    margin-top: 30px;
+  }
+}
