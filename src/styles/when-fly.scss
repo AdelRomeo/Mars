@@ -1,0 +1,102 @@
+.when-fly{
+  width: 100%;
+  background: url("../../images/when-flyBack.png") no-repeat #8e1457;
+  background-size: 1920px;
+  background-position: center;
+  color: $white-color;
+  padding: 50px 10%;
+  margin-top: 100px;
+}
+
+.when-fly_title{
+  color: $white-color;
+}
+
+.when-fly_main-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback-form{
+  max-width: 400px;
+  max-height: 410px;
+  background: rgba(23, 33, 69, 0.76);
+  padding: 40px;
+  margin-right: 20px;
+  &>p{
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &>input{
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+    &::placeholder{
+      color: #ffffff;
+    }
+  }
+  &>button{
+    background: #ffffff;
+    color: #e12457;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    box-shadow: 3px 0px 30px -4px #ffffff;
+    transition: box-shadow ease 350ms;
+    &:hover{
+      box-shadow: 3px 0px 38px 1px #ffffff;
+    }
+  }
+}
+
+.when-fly_main-info{
+  @include main-descr;
+  color: #ffffff;
+  width: 60%;
+  &>button{
+    color: $white-color;
+    margin-top: 20px;
+    border-bottom: 1px solid #ffffff;
+    padding: 0;
+  }
+}
+
+.main-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.main-footer_logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo-img{
+  width: 32px;
+  height: 32px;
+}
+
+.main-footer_info-company{
+  text-decoration: underline;
+}
+
+.main-footer_social{
+  display: flex;
+  align-items: center;
+  &>a{
+    margin-left: 10px;
+  }
+}
+
