@@ -1,3 +1,13 @@
+//функция прокрутки header
+(function getDownHeader() {
+    //кнопка которая прокручивает header
+    const btnDown = document.querySelector('.main-header_down');
+    const downBlock = document.querySelector('.information-mars');
+
+    //вешаем обработчик на кнопку
+    btnDown.addEventListener('click', ()=>downBlock.scrollIntoView({behavior: "smooth"}))
+})();
+
 const selectBtns = document.querySelectorAll('.survival-title>button'); //кнопки
 const selectMain = document.querySelector('.survival-title'); //родительский элемент кнопок
 const selectArticles = document.querySelectorAll('.survival-item'); //абзацы
