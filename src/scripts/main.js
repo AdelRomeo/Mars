@@ -40,3 +40,28 @@ selectMain.addEventListener('click', (event)=>{
         setTimeout(()=> selectArticles[index].style.opacity = '1', 600);
     }
 });
+//-------------------------------------------------------------
+
+
+//конопки(родители для span`ов)
+const markerBtn = document.querySelectorAll('.marker_item_btn');
+
+// for (let i = 0; i <markerBtn.length; i++){
+//     markerBtn[i].addEventListener('click', (event)=>{
+//         markerBtn.forEach(elem => elem.classList.remove('marker_item_btn-focus'));
+//         event.currentTarget.classList.add('marker_item_btn-focus')
+//     });
+// }
+
+
+
+markerBtn.forEach((elemMass) => {
+    elemMass.addEventListener('click', (event) => {
+        markerBtn.forEach(elem => elem.classList.remove('marker_item_btn-focus'));
+        event.currentTarget.classList.add('marker_item_btn-focus')
+    })
+});
+
+
+
+

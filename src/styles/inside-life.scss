@@ -31,10 +31,11 @@
   }
 }
 
-.marker_item>button{
+.marker_item_btn{
   position: relative;
   width: 40px;
   margin-bottom: 20px;
+  transition: all 900ms;
   &:after{
     position: absolute;
     left: -22px;
@@ -49,7 +50,13 @@
   }
 }
 
-.marker_item>button>span{
+.marker_item_btn-focus{
+  &:after{
+    background: #e12457;
+  }
+}
+
+.marker_item-title{
   display: block;
   font-family: $main-font;
   margin-top: 10px;
