@@ -50,6 +50,10 @@
   }
 }
 
+.invisible-articles{
+  display: none;
+}
+
 .marker_item_btn-focus{
   &:after{
     background: #e12457;
@@ -78,6 +82,7 @@
 
 .inside-life_container-img>img{
   max-width: 100%;
+  min-width: 900px;
   height: auto;
 }
 
